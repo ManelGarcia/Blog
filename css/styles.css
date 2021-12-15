@@ -1,78 +1,122 @@
-html{
+html {
     font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
 }
 
+
 /* Redimensión de fuente utilizando rem */
-p{
+
+p {
     font-size: 1rem;
 }
 
-h1{
+h1 {
     font-size: 3rem;
+    margin: 0%;
 }
 
-h3{
+h3 {
     font-size: 2rem;
 }
 
+
 /* clases predefinidas */
+
 * {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
 }
 
-/* Clear floats after the columns */
-.row:after {
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
-/* Diseño de columnas */
-.column-1{
-    width: 100%;
-    float: left;
-}
 
-.column-2{
-    width: 50%;
-    float: left;
-}
-
-.column-3{
+.column3 {
     width: 33.33%;
     float: left;
 }
 
-.column-4{
+.column4 {
     width: 25%;
     float: left;
 }
 
-.column-5{
-    width: 20%;
-    float: left;
+header {
+    height: 100vh;
+    background-image: url(../img/Turtle.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.column-6{
-    width: 16.66%;
-    float: left;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#card1 {
+    background-image: url(../img/Space1.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card2 {
+    background-image: url(../img/Stairs.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card3 {
+    background-image: url(../img/Clot.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card4 {
+    background-image: url(../img/Koala.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 0.5%;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
 
 /* Otras clases */
 
 @media only screen and (max-width: 600px) {
-/*reglas*/
-    /* column-3 pasará de tener 33.33% a 100% */
-    .column-3{
-        width: 100%;
-    }
-    /* column-4 pasará de tener 25% a 50% */
-    .column-4{
-        width: 50%;
-    }
-    #caja-10{
+    .column3 {
         width: 100%;
     }
 }
